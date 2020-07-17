@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Wide View GitLab",
+  "description": "Makes the code diff viewer on merge requests full width.",
+  "version": "0.2",
+  "content_scripts": [
+    {
+      "matches": ["https://gitlab.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "50": "icon.png"
+  }
+}
